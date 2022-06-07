@@ -555,31 +555,3 @@ begin
 end $$
 DELIMITER ;
 
-
-
-USE bdintervention
-
-/*Procedure suprimer Appareil*/
-DELIMITER ;;
-CREATE  PROCEDURE `supprimerappareil`(`Pid_appareil` int)
-begin
-  delete from appareil where id_appareil=Pid_appareil;
-end ;;
-DELIMITER ;
-/*Procedure suprimer Bon Livraison*/
-DELIMITER ;;
-CREATE  PROCEDURE `supprimerbon`(`Pid_bon` int)
-begin
-  delete from bon_livraison where id_bon=Pid_bon;
-end ;;
-DELIMITER ;
-/*Procedure suprimer categorie*/
-DELIMITER ;;
-CREATE  PROCEDURE `supprimerctaegorie`(`Pid_cat` int)
-begin
-  delete from categorie where id_categorie=Pid_cat;
-end ;;
-DELIMITER ;
-
-
-
